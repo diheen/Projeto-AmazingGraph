@@ -47,7 +47,7 @@
 }
 .main{
     position: relative;
-    width: 100vw;
+    width: 80vw;
     margin-left: 25%; 
     display: flex;
 }
@@ -94,7 +94,7 @@
     .menu__mobile{
         cursor: pointer;
         display: block;
-        margin-left: 60%;
+        margin-left: 20%;
         
     }
     
@@ -104,6 +104,9 @@
         background-color: #766F68;
         margin: 5px;
         
+    }
+    .cabecalho{
+        margin: 0;
     }
     .cabecalho__lista{
         display: none;
@@ -116,6 +119,7 @@
     .main{
         flex-direction: column;
         align-items: center;
+        margin-left: 10%
     }
     
     .main__container{
@@ -127,7 +131,4 @@
         width: 100vw;
     }
 
-    .cabecalho__lista.active{
-        transform: translateX(0);
-    }
 }
