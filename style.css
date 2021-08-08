@@ -1,0 +1,132 @@
+.base{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.cabecalho{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    
+    
+}
+.cabecalho_nav{
+    display: flex;
+
+}
+
+.cabecalho__logo{
+    color: #D2872C;
+    font-weight: bold;
+}
+
+.cabecalho__lista{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cabecalho__lista___item{
+    list-style: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    color:#766F68;
+    font-weight: bold;
+}
+
+.cabecalho__lista___link{
+    text-decoration: none;
+}
+
+.cabecalho__lista___link:hover{
+    color: #c9beb4;
+}
+.main{
+    position: relative;
+    width: 100vw;
+    margin-left: 25%; 
+    display: flex;
+}
+.main__imagem{
+    margin-top: 5rem;
+    margin-left: 23rem;
+    width: 650px;
+}
+.main__titulo{
+    color: #766F68;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.main__container{
+    position: absolute;
+    text-align: left;
+}
+
+.main__descricao{
+    font-size: 1.75rem;
+    color: #766F68;
+    text-align: justify;
+}
+
+.main__botao{
+    width: 60%;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D2872C;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 920px) {
+    
+    .menu__mobile{
+        cursor: pointer;
+        display: block;
+        margin-left: 60%;
+        
+    }
+    
+    .menu__mobile div{
+        width: 32px;
+        height: 3px;
+        background-color: #766F68;
+        margin: 5px;
+        
+    }
+    .cabecalho__lista{
+        display: none;
+    }
+
+    .cabecalho__nav{
+        margin: 0;
+    }
+
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main__container{
+        position: relative;
+    }
+
+    .main__imagem{
+        margin: 1rem 1rem 1rem 1rem;
+        width: 100vw;
+    }
+
+    .cabecalho__lista.active{
+        transform: translateX(0);
+    }
+}
